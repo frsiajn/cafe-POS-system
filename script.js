@@ -253,9 +253,9 @@
     }).join('');
 
     receiptEl.innerHTML = `
-      <div class="r-brand">Pastel Café</div>
+      <div class="r-brand">Bloom & Brew</div>
       <div class="r-tag">Official Receipt</div>
-      <div class="r-address">123 Aroma Street, Makati City · (02) 8123 4567</div>
+      <div class="r-address">123 Aroma Street, Davao City · (02) 8123 4567</div>
       <hr class="r-divider">
       <div class="r-meta"><span>Order No.</span><span>#${orderNo}</span></div>
       <div class="r-meta"><span>Date</span><span>${dateStr}</span></div>
