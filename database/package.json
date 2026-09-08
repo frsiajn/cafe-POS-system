@@ -1,0 +1,16 @@
+{
+  "name": "cafe-inventory-backend",
+  "version": "1.0.0",
+  "description": "SQL-backed inventory, batch shelf-life, and restock-alert simulation for the Bloom & Brew POS",
+  "main": "server.js",
+  "scripts": {
+    "seed": "node seed.js",
+    "demo": "node demo.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1"
+  },
+  "license": "ISC"
+}
