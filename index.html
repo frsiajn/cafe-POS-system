@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom & Brew — Point of Sale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="brand"> Bloom & Brew </div>
+    <div class="order-meta">Order <strong id="orderNoPreview">#00124</strong><br><span id="clockPreview"></span></div>
+  </div>
+
+  <div class="layout">
+    <div>
+      <div class="categories">
+        <button class="cat-btn active" data-cat="coffee">Coffee</button>
+        <button class="cat-btn" data-cat="pastry">Pastries</button>
+      </div>
+      <div class="grid" id="productGrid"></div>
+    </div>
+
+    <div class="order-panel">
+      <h2>Order Summary <span id="itemCount">0 ITEMS</span></h2>
+      <div class="order-items" id="orderItems"></div>
+      <div class="totals">
+        <div class="row"><span>Subtotal</span><span id="subtotalVal">₱0.00</span></div>
+        <div class="row"><span>VAT (12%)</span><span id="taxVal">₱0.00</span></div>
+        <div class="row grand"><span>Total</span><span id="totalVal">₱0.00</span></div>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn" disabled>Checkout &amp; Print Receipt</button>
+      <button class="clear-btn" id="clearBtn">Clear order</button>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="receipt-card">
+      <div id="receipt"></div>
+      <div class="receipt-actions">
+        <button class="btn-print" id="printBtn">Print</button>
+        <button class="btn-new" id="newOrderBtn">New Order</button>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
