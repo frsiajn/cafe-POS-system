@@ -253,7 +253,7 @@
     }).join('');
 
     receiptEl.innerHTML = `
-      <div class="r-brand">Bloom & Brew</div>
+      <div class="r-brand">Bloom &amp; Brew</div>
       <div class="r-tag">Official Receipt</div>
       <div class="r-address">123 Aroma Street, Davao City · (02) 8123 4567</div>
       <hr class="r-divider">
